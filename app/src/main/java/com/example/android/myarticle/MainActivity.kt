@@ -52,30 +52,30 @@ class MainActivity : AppCompatActivity() {
     }
     private fun addTopic(view: View) {
         val editText = findViewById<EditText>(R.id.topic_edit)
-        val nicknameTextView = findViewById<TextView>(R.id.usertopic_text)
-        nicknameTextView.text = editText.text
+        val myTopicTextView = findViewById<TextView>(R.id.usertopic_text)
+        myTopicTextView.text = editText.text
         editText.visibility = View.GONE
         view.visibility = View.GONE
-        nicknameTextView.visibility = View.VISIBLE
+        myTopicTextView.visibility = View.VISIBLE
     }
     private fun addArticle(view: View) {
         val editText = findViewById<EditText>(R.id.article_edit)
-        val nicknameTextView = findViewById<TextView>(R.id.article_text)
-        nicknameTextView.text = editText.text
+        val myArticleTextView = findViewById<TextView>(R.id.article_text)
+        myArticleTextView.text = editText.text
         editText.visibility = View.GONE
         view.visibility = View.GONE
-        nicknameTextView.visibility = View.VISIBLE
+        myArticleTextView.visibility = View.VISIBLE
         val inputMethodManager = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
         inputMethodManager.hideSoftInputFromWindow(view.windowToken, 0)
 
     }
     private fun addAuthor(view: View) {
         val editText = findViewById<EditText>(R.id.author_edit)
-        val nicknameTextView = findViewById<TextView>(R.id.author_text)
-        nicknameTextView.text = editText.text
+        val authorTextView = findViewById<TextView>(R.id.author_text)
+        authorTextView.text = editText.text
         editText.visibility = View.GONE
         view.visibility = View.GONE
-        nicknameTextView.visibility = View.VISIBLE
+        authorTextView.visibility = View.VISIBLE
         val inputMethodManager = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
         inputMethodManager.hideSoftInputFromWindow(view.windowToken, 0)
     }
