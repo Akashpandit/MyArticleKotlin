@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Article</string>
+    <string name="name">MyTopic</string>
+    <string name="done">Done</string>
+    <string name="topic_first"><I>What is the Topic?</I></string>
+    <string name="Articlecontent">Here comes the awesome content.... </string>
+    <string name="authorname">Your Name</string>
+    <string name="share_button">Share</string>
+    <string name="article">Article </string>
+</resources>
